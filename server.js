@@ -45,9 +45,6 @@ module.exports = function() {
 
 	})
 
-	//connect to the server
-	client.connect();
-
 	return client;
 }
 
