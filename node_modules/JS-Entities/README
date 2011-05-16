@@ -1,0 +1,38 @@
+# JS Entities
+
+http://github.com/bmeck/jsentities/
+
+## Purpose
+
+To provide a means of character to entity encoding generation which is not prohibitively slow and is reusable.
+
+## Provided Encodings
+
+* xml - The valid xml entities.
+* html - The valid html entities.
+* htmllegacy - The valid html entities for legacy support (ie. missing semi-colons).
+
+## Example
+
+	var html = require("./index.js").html
+	console.log(html.decode("&lt;br&gt;"))
+	console.log(html.encode("<br>"))
+
+## Usage
+
+generateEncoding( mapping ) -> {
+	encode:Function(String) -> String
+	,decode:Function(String) -> String
+}
+
+mapping = {
+	String[][2] entities = [[entity,decoded]...]
+
+	//Used for generic encoding to generic String
+	, toEntity : {
+		matcher : RegExp(...,"")//do not use case insensitivity or multiline features
+		, replacement : function (String) -> String
+	}
+
+	//Used for generic encoding to generic String
+}

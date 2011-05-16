@@ -1,0 +1,14 @@
+{
+  "author": "",
+  "name": "Simple-Bot",
+  "version": "0.0.0",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/charlieistheman/Simple-Bot.git"
+  },
+  "engines": {
+    "node": "~v0.4.7"
+  },
+  "dependencies": {},
+  "devDependencies": {}
+}

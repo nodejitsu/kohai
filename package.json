@@ -4,7 +4,7 @@
   "version": "0.0.0",
   "repository": {
     "type": "git",
-    "url": "git://github.com/charlieistheman/Simple-Bot.git"
+    "url": "git://github.com/avianflu/Simple-Bot.git"
     },
   "engines": {
     "node": "v0.4.7"
@@ -13,7 +13,8 @@
     "irc" : "0.2.x",
     "oauth" : "0.9.x",
     "translate" : "0.7.x",
-    "JS-Entities" : ">=0.1.0"
+    "JS-Entities" : ">=0.1.0",
+    "twitter" : ">=0.1.17"
     },
   "devDependencies": {}
 }

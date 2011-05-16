@@ -10,7 +10,7 @@ module.exports = function() {
 	//ok all of our stuff is ready to start up the bot
 	var client = new irc.Client(
 		config.server || "irc.freenode.net"
-		, config.name || "bmeckbot"
+		, config.name || "kohai"
 		, config
 	)
 	

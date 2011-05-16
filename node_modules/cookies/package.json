@@ -1,0 +1,15 @@
+{
+  "name": "cookies",
+  "version": "0.1.6",
+  "description": "Cookies, optionally signed using Keygrip.",
+  "main": "./index",
+  "engines": [
+    "node"
+  ],
+  "directories": {
+    "lib": "./lib"
+  },
+  "files": [
+    ""
+  ]
+}
