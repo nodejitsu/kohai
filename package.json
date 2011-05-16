@@ -5,13 +5,15 @@
   "repository": {
     "type": "git",
     "url": "git://github.com/charlieistheman/Simple-Bot.git"
-  },
+    },
   "engines": {
     "node": "v0.4.7"
-  },
-  "dependencies": {"irc" : "0.2.x",
-		   "oauth" : "0.9.x",
-		   "translate" : "0.7.x",
-		   "JS-Entities" : ">=0.1.0"},
+    },
+  "dependencies": {
+    "irc" : "0.2.x",
+    "oauth" : "0.9.x",
+    "translate" : "0.7.x",
+    "JS-Entities" : ">=0.1.0"
+    },
   "devDependencies": {}
 }
