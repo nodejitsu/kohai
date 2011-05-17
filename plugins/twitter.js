@@ -20,10 +20,10 @@ module.exports = function(config){
                 client.say(config.channels[0], "Twitter Connection Successful!")
                 twit.stream('user', {track:config.plugins.twitter.track}, function(stream) {
                     stream.on('data', function (data) {
-                        console.log(sys.inspect(data));
+                        //console.log(sys.inspect(data));
                         if(data.text) {
                             client.say(config.channels[0], "@" + data.user.screen_name + ": " + data.text)
-                            console.log(config.channels[0], "@" + data.user.screen_name + ": " + data.text)
+                            console.log("@" + data.user.screen_name + ": " + data.text)
                         }
                     })
                 })
