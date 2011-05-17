@@ -1,10 +1,10 @@
 {
   "author": "",
-  "name": "Simple-Bot",
+  "name": "Kohai",
   "version": "0.0.0",
   "repository": {
     "type": "git",
-    "url": "git://github.com/avianflu/Simple-Bot.git"
+    "url": "git@github.com:nodejitsu/kohai.git"
     },
   "engines": {
     "node": "v0.4.7"
