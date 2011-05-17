@@ -11,17 +11,18 @@ module.exports = function(config) {
                         this.on("message" + config.channels[0], function (from, message){
                                 console.log(from, " : ", message)
                                 var talkSmack = message.match(/\bbot\b/i)
-                                var intro = message.match(/^kohai\s.*/i)
+                                var intro = message.match(/kohai:\sintroduce.*/i)
                                 var tweet = message.match(/^!tweet\s/i)
                                 if(tweet) {
                                     re = /^!tweet\s(.{1,140})/;
                                     var tweetMatch = re.exec(message);
                                     twit.updateStatus(tweetMatch[1], function (data) {
-                                        console.log(JSON.stringify(data))
+                                        console.log("@" + data.user.screen_name + ": " + data.text)
                                     })
                                 }
                                 if(talkSmack) client.say(config.channels[0], "'Bot' is a derogatory term, and I'm offended.")
                                 if(intro) client.say(config.channels[0], "I am Kohai, semi-useful communications-facilitating pseudointelligence!")
+                                
                                 
                                 
                         })
