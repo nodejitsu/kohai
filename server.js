@@ -1,6 +1,6 @@
 //grab node-irc (available on npm)
 var irc = require("irc")
-var arghelper = require("./utils/arguments.js")
+arghelper = require("./utils/arguments.js") //this can either go into ./plugins/alias.js or stay here with no 'var'
 
 //our bot is exportable
 module.exports = function() {
@@ -14,19 +14,7 @@ module.exports = function() {
 		, config
 	)
 	
-	client.triggers = {}
-	client.on("message",function triggerListener(name,to,message) {
-		var trigger_match = message.match(/^[!](\S+)(.*|$)?/)
-		if(trigger_match) {
-			var trigger = trigger_match[1]
-			
-			var handler = client.triggers[trigger]
-			if(handler) {
-				var args = arghelper(trigger_match[2])
-				handler.apply(client,[name,to,message].concat(args));
-			}
-		}
-	})
+	
 	client.on("error",function() {
 		console.log(arguments)
 	})
