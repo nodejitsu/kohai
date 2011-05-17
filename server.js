@@ -38,7 +38,7 @@ module.exports = function() {
 	modules.forEach(function(module_name){
 
 		//get the modules from the modules directory relative to where *this* script lives
-		var handler = require(__dirname+"/modules/"+module_name)
+		var handler = require(__dirname+"/plugins/"+module_name)
 		if(typeof handler === "function") {
 			handler.call(client, config)
 		}
