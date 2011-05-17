@@ -8,7 +8,7 @@ module.exports = function(config){
 	if(!tracking) { tracking=[] }
 	else { tracking = tracking.concat() }
             
-        var twit = new twitter(config.auth.twitter); 
+        twit = new twitter(config.auth.twitter); 
         
         try {
         twit.verifyCredentials(function (data) { sys.puts(sys.inspect(data)) })
@@ -16,12 +16,15 @@ module.exports = function(config){
         catch(error) { console.log(JSON.stringify(error)); process.exit() }
         
         client.once("join", function (channel, nick) {
-            if(channel == "#nodetestsu") {
-                client.say("#nodetestsu", "Twitter Connection Successful!")
+            if(channel == config.channels[0]) {
+                client.say(config.channels[0], "Twitter Connection Successful!")
                 twit.stream('user', {track:config.plugins.twitter.track}, function(stream) {
                     stream.on('data', function (data) {
                         console.log(sys.inspect(data));
-                        if(data.text) client.say("#nodetestsu", data.user.screen_name + ": " + data.text);
+                        if(data.text) {
+                            client.say(config.channels[0], "@" + data.user.screen_name + ": " + data.text)
+                            console.log(config.channels[0], "@" + data.user.screen_name + ": " + data.text)
+                        }
                     })
                 })
             }
