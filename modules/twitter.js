@@ -8,17 +8,12 @@ module.exports = function(config){
 	if(!tracking) { tracking=[] }
 	else { tracking = tracking.concat() }
             
-        var twit = new twitter({
-            consumer_key: 'yeah',
-            consumer_secret: 'no',
-            access_token_key: 'creds',
-            access_token_secret: 'here'
-        }); 
+        var twit = new twitter(config.auth.twitter); 
         
         try {
         twit.verifyCredentials(function (data) { sys.puts(sys.inspect(data)) })
         }
-        catch(error) { console.log(JSON.stringify(error); process.exit() }
+        catch(error) { console.log(JSON.stringify(error)); process.exit() }
         
         client.once("join", function (channel, nick) {
             if(channel == "#nodetestsu") {
