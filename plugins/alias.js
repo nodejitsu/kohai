@@ -3,8 +3,10 @@ module.exports = function (config) {
     var client = this
     var whitelist = config.plugins.alias.whitelist
     client.triggers = {
-                            "insult" : function (message) {
-                                    client.say(config.channels[0], "You," + message + ", are a quite nonsensical dallywhacker!")
+                            "insultme" : function (message) {
+                                    config.channels.forEach(function (channel, index) {
+                                        client.say(channel, message + " is a scurrilous knave!")
+                                    })
                                 },
         
                             "gtfo" : function () { process.exit() }
