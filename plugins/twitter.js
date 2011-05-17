@@ -16,19 +16,20 @@ module.exports = function(config){
         catch(error) { console.log(JSON.stringify(error)); process.exit() }
         
         client.once("join", function (channel, nick) {
-            if(channel == config.channels[0]) {
-                client.say(config.channels[0], "Twitter Connection Successful!")
+                client.say(channel, "Twitter Connection Successful!")
                 twit.stream('user', {track:config.plugins.twitter.track}, function(stream) {
                     stream.on('data', function (data) {
                         //console.log(sys.inspect(data));
-                        if(data.text) {
-                            client.say(config.channels[0], "@" + data.user.screen_name + ": " + data.text)
-                            console.log("@" + data.user.screen_name + ": " + data.text)
+                        if((data.text)&&((!data.retweeted)||(data.retweet_count % 5))) {
+                            config.channels.forEach(function (channel, index) {
+                                client.say(channel, "@" + data.user.screen_name + ": " + data.text)
+                                console.log(channel + " - @" + data.user.screen_name + ": " + data.text)
+                            })
                         }
                     })
                 })
-            }
-        
+            
+            
         })
         /*twit.updateStatus('Test tweet from node-twitter/' + twitter.VERSION,
                 function (data) {
