@@ -7,7 +7,7 @@ module.exports = function(config){
         var tracking = config.plugins.twitter.track
 	if(!tracking) { tracking=[] }
 	else { tracking = tracking.concat() }
-            
+        beQuiet = false
         twit = new twitter(config.auth.twitter); 
         
         try {
@@ -22,11 +22,13 @@ module.exports = function(config){
                     twit.stream('user', {track:config.plugins.twitter.track}, function(stream) {
                         stream.on('data', function (data) {
                             //console.log(sys.inspect(data));
-                            if((data.text)&&((!data.text.match(/.*\bRT:?.*/i))&&(!data.retweeted))) {
-                                config.channels.forEach(function (channel, index) {
-                                    client.say(channel, "@" + data.user.screen_name + ": " + data.text)
-                                })
-                                console.log("@" + data.user.screen_name + ": " + data.text)
+                            if(!beQuiet) {
+                                if((data.text)&&((!data.text.match(/.*\bRT:?.*/i))&&(!data.retweeted))) {
+                                    config.channels.forEach(function (channel, index) {
+                                        client.say(channel, "@" + data.user.screen_name + ": " + data.text)
+                                    })
+                                    console.log("@" + data.user.screen_name + ": " + data.text)
+                                }
                             }
                         })
                     })
