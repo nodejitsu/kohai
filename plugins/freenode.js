@@ -12,8 +12,8 @@ module.exports = function(config) {
                         config.channels.forEach(function (channel, index) {
                             client.on("message" + channel, function (from, message){
                                     console.log(from, " : ", message)
-                                    var talkSmack = message.match(/\bbot\b/i)
-                                    var intro = message.match(/kohai:\sintroduce.*/i)
+                                    var talkSmack = message.match(/kohai:\s.*\bbot\b/i)
+                                    var intro = message.match(/kohai:\sintro.*/i)
                                     var tweet = message.match(/^!tweet\s/i)
                                     if(tweet) {
                                         for (var i=0; i<whitelist.length; i++) {
@@ -21,7 +21,7 @@ module.exports = function(config) {
                                                 re = /^!tweet\s(.{1,140})/;
                                                 var tweetMatch = re.exec(message);
                                                 twit.updateStatus(tweetMatch[1], function (data) {
-                                                    console.log("@" + data.user.screen_name + ": " + data.text)
+                                                    console.log("Tweeted: " + data.text + " For: " + from)
                                                 })
                                             }
                                         }
