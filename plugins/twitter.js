@@ -16,19 +16,22 @@ module.exports = function(config){
         catch(error) { console.log(JSON.stringify(error)); process.exit() }
         
         client.once("join", function (channel, nick) {
-                client.say(channel, "Twitter Connection Successful!")
-                twit.stream('user', {track:config.plugins.twitter.track}, function(stream) {
-                    stream.on('data', function (data) {
-                        //console.log(sys.inspect(data));
-                        if((data.text)&&((!data.retweeted)||(data.retweet_count % 5))) {
-                            config.channels.forEach(function (channel, index) {
-                                client.say(channel, "@" + data.user.screen_name + ": " + data.text)
-                                console.log(channel + " - @" + data.user.screen_name + ": " + data.text)
-                            })
-                        }
+                config.channels.forEach(function (channel, index) { client.say(channel, "Twitter Connection Successful!")})
+                try {
+                    console.log("about to try twit.stream...")
+                    twit.stream('user', {track:config.plugins.twitter.track}, function(stream) {
+                        stream.on('data', function (data) {
+                            //console.log(sys.inspect(data));
+                            if((data.text)&&((!data.text.match(/.*\bRT:?.*/))&&(!data.retweeted))) {
+                                config.channels.forEach(function (channel, index) {
+                                    client.say(channel, "@" + data.user.screen_name + ": " + data.text)
+                                })
+                                console.log("@" + data.user.screen_name + ": " + data.text)
+                            }
+                        })
                     })
-                })
-            
+                }
+                catch(error) { console.log(JSON.stringify(error)); process.exit() }
             
         })
         /*twit.updateStatus('Test tweet from node-twitter/' + twitter.VERSION,
