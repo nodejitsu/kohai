@@ -22,7 +22,7 @@ module.exports = function(config){
                     twit.stream('user', {track:config.plugins.twitter.track}, function(stream) {
                         stream.on('data', function (data) {
                             //console.log(sys.inspect(data));
-                            if((data.text)&&((!data.text.match(/.*\bRT:?.*/))&&(!data.retweeted))) {
+                            if((data.text)&&((!data.text.match(/.*\bRT:?.*/i))&&(!data.retweeted))) {
                                 config.channels.forEach(function (channel, index) {
                                     client.say(channel, "@" + data.user.screen_name + ": " + data.text)
                                 })
