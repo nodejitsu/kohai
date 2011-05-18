@@ -8,6 +8,7 @@ module.exports = function(config) {
 			client.on("motd",function motd(){ 
 				client.say("nickserv","identify "+auth.password)
                                 console.log("Connected to freenode...")
+                                
                         })
                         config.channels.forEach(function (channel, index) {
                             client.on("message" + channel, function (from, message){
