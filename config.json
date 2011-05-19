@@ -23,13 +23,13 @@
     "auth" : {
       "twitter" : {
         "consumer_key" : "twitter",
-        "consumer_secret" : "keys",
+        "consumer_secret" : "credentials",
         "access_token_key" : "go",
         "access_token_secret" : "here"
       },
       "freenode" : {
         "nick" : "kohai",
-        "password" : "yeahyouwish"
+        "password" : ""
       }
     }
   }

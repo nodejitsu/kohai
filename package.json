@@ -6,6 +6,7 @@
     "type": "git",
     "url": "git@github.com:nodejitsu/kohai.git"
   },
+  "main": "./lib/kohai",
   "engines": {
     "node": "v0.4.7"
   },
