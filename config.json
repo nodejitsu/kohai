@@ -1,0 +1,37 @@
+
+{
+  "config" : {
+    "nick" : "kohai",
+    "server" : "irc.freenode.net",
+    "channels" : ["#nodejitsu", "#nodetestsu"],
+    "plugins" : {
+      "twitter" : {
+        "track" : [
+          "#nodejs", "node.js", "@maraksquires", "@nodejitsu", "@nodekohai", "nodejitsu", "#nodejitsu", "marak squires", "#nodeconf", "#jsconf", "dnode"
+        ]
+      },
+      "alias" : {
+        "whitelist" : [ "AvianFlu", "Marak", "hij1nx" ]
+      }
+    },
+    "modules" : [
+      
+      "freenode",
+      "alias",
+      "twitter",
+      "translate"
+    ],
+    "auth" : {
+      "twitter" : {
+        "consumer_key" : "twitter",
+        "consumer_secret" : "keys",
+        "access_token_key" : "go",
+        "access_token_secret" : "here"
+      },
+      "freenode" : {
+        "nick" : "kohai",
+        "password" : "yeahyouwish"
+      }
+    }
+  }
+}

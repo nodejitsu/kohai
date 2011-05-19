@@ -5,16 +5,17 @@
   "repository": {
     "type": "git",
     "url": "git@github.com:nodejitsu/kohai.git"
-    },
+  },
   "engines": {
     "node": "v0.4.7"
-    },
+  },
   "dependencies": {
     "irc" : "0.2.x",
     "oauth" : "0.9.x",
     "translate" : "0.7.x",
     "JS-Entities" : ">=0.1.0",
-    "twitter" : ">=0.1.17"
-    },
+    "twitter" : ">=0.1.17",
+    "nconf" : "0.1.x"
+  },
   "devDependencies": {}
 }

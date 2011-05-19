@@ -1,7 +1,6 @@
 module.exports = function(config){
   var client = this
-  console.log("twitter module started.")
-  var sys = require('sys'),
+  
   twitter = require('twitter');
 
   var tracking = config.plugins.twitter.track
@@ -11,7 +10,7 @@ module.exports = function(config){
   twit = new twitter(config.auth.twitter); 
     
   try {
-    twit.verifyCredentials(function (data) { sys.puts(sys.inspect(data)) })
+    twit.verifyCredentials(function (data) { console.log(JSON.stringify(data)) })
   }
   catch(error) { console.log(JSON.stringify(error)); process.exit() }
     
@@ -21,7 +20,6 @@ module.exports = function(config){
         console.log("about to try twit.stream...")
         twit.stream('user', {track:config.plugins.twitter.track}, function(stream) {
           stream.on('data', function (data) {
-            //console.log(sys.inspect(data));
             if(!beQuiet) {
               if((data.text)&&((!data.text.match(/.*\bRT:?.*/i))&&(!data.retweeted))) {
                 config.channels.forEach(function (channel, index) {

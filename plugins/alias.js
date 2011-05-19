@@ -1,7 +1,7 @@
 module.exports = function (config) {
   
   var client = this
-  var whitelist = config.plugins.alias.whitelist
+
   client.triggers = {
     "insultme" : function (channel, name, message) {
       client.say(channel, name + " is a wombat-loving heifer-puncher!")
@@ -29,6 +29,7 @@ module.exports = function (config) {
       else { client.say(channel, "Not currently muted!") }
     }
   }
+  
   config.channels.forEach(function (channel, index) {
     client.on("message" + channel,function triggerListener(from, message) {
       for (var i=0; i<whitelist.length; i++) {
