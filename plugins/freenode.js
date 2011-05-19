@@ -16,15 +16,15 @@ module.exports = function(config) {
           var intro = message.match(/kohai:\sintro.*/i)
           var tweet = message.match(/^!tweet\s/i)
           if(tweet) {
-            whitelist.
-              if (whitelist[i] == from) {
+            whitelist.forEach(function (name, index) {
+              if (name == from) {
                 re = /^!tweet\s(.{1,140})/;
                 var tweetMatch = re.exec(message);
                 twit.updateStatus(tweetMatch[1], function (data) {
                   console.log("Tweeted: " + data.text + " For: " + from)
                 })
               }
-            }
+            })
           }
           if(talkSmack) client.say(channel, "'Bot' is a derogatory term, and I'm offended.")
           if(intro) client.say(channel, "I am Kohai, semi-useful communications-facilitating pseudointelligence!")

@@ -8,13 +8,8 @@ module.exports = function() {
   //grab our configuration for the bot
   //var config = require(__dirname+"/config.js")()
     nconf.use('file', { file: './config.json' } )
-    //console.log(nconf)
+    nconf.load()
     config = nconf.get('config')
-    console.log("nconf.get('config') is: " + nconf.get('config'))
-    nconf.set('config:testval', 'a string to test, to test a string.')
-    //console.log(nconf.get('config:modules'))
-    console.log("config is: " + config)
-    return false
 
   var client = new irc.Client(
     config.server || "irc.freenode.net"
