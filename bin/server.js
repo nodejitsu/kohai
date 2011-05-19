@@ -1,15 +1,16 @@
 //grab node-irc (available on npm)
 var irc = require("irc")
-arghelper = require("./utils/arguments.js") //this can either go into ./plugins/alias.js or stay here with no 'var'
+arghelper = require("../lib/utils/arguments.js") //this can either go into ./plugins/alias.js or stay here with no 'var'
 fs = require("fs")
 nconf = require("nconf")
 //our bot is exportable
 module.exports = function() {
   //grab our configuration for the bot
   //var config = require(__dirname+"/config.js")()
-    nconf.use('file', { file: './config.json' } )
+    nconf.use('file', { file: __dirname+'/../config.json' } )
     nconf.load()
     config = nconf.get('config')
+    whitelist = config.plugins.alias.whitelist
 
   var client = new irc.Client(
     config.server || "irc.freenode.net"
@@ -26,7 +27,7 @@ module.exports = function() {
   //load all of the modules our bot uses
   modules.forEach(function(module_name){
     //get the modules from the modules directory relative to where *this* script lives
-    var handler = require(__dirname+"/plugins/"+module_name)
+    var handler = require(__dirname+"/../lib/plugins/"+module_name)
     if(typeof handler === "function") {
       handler.call(client, config)
     }
