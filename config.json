@@ -6,11 +6,17 @@
     "plugins" : {
       "twitter" : {
         "track" : [
-          "#nodejs", "node.js", "@maraksquires", "@nodejitsu", "@nodekohai", "nodejitsu", "#nodejitsu", "marak squires", "#nodeconf", "#jsconf", "dnode"
+          "#nodejs", "node.js", "@maraksquires", "@nodejitsu", "@nodekohai", "nodejitsu", "#nodejitsu", "marak squires", "#nodeconf", "#jsconf", "dnode", "nconf"
         ]
       },
       "alias" : {
-        "whitelist" : [ "AvianFlu", "Marak", "hij1nx" ]
+        "whitelist" : [ "AvianFlu", "Marak", "hij1nx", "indexzero" ]
+      },
+      "freenode" : {
+        "command_string" : "!",
+        "oplist" : [ "Marak", "hij1nx", "indexzero" ],
+        "voicelist" : [ "AvianFlu", "SubStack", "nlco" ],
+        "banlist" : []
       }
     },
     "modules" : [
@@ -22,10 +28,10 @@
     ],
     "auth" : {
       "twitter" : {
-        "consumer_key" : "twitter",
-        "consumer_secret" : "credentials",
-        "access_token_key" : "go",
-        "access_token_secret" : "here"
+        "consumer_key" : "",
+        "consumer_secret" : "",
+        "access_token_key" : "",
+        "access_token_secret" : ""
       },
       "freenode" : {
         "nick" : "kohai",
