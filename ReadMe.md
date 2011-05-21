@@ -26,6 +26,10 @@ We look forward to seeing your patches and continuing to improve this library.
 
 kohai will now start up and connect to its default channels on irc.freenode.net.
 
+# Got Ideas? Got Issues?
+
+Check out our [Issue Tracker](https://github.com/nodejitsu/kohai/issues), we have a lot of open issues being worked on. Feel free to add feature requests [here](https://github.com/nodejitsu/kohai/issues).
+
 # Configuration
 
 All `kohai` configuration settings are stored in the `config.json` file. 
