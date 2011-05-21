@@ -2,7 +2,7 @@
   "config" : {
     "nick" : "kohai",
     "server" : "irc.freenode.net",
-    "channels" : ["#nodefarm", "#nodetestsu"],
+    "channels" : ["#Node.js", "#nodejitsu", "#nodetestsu"],
     "plugins" : {
       "twitter" : {
         "track" : [
@@ -10,13 +10,13 @@
         ]
       },
       "alias" : {
-        "whitelist" : [ "AvianFlu", "Marak", "hij1nx", "indexzero" ]
+        "whitelist" : [ "AvianFlu", "Marak", "hij1nx", "indexzero", "DTrejo", "tmpvar", "ryah", "dominictarr" ]
       },
       "freenode" : {
         "mute_timer" : 60000,
         "command_string" : "!",
         "oplist" : [ "Marak", "hij1nx", "indexzero" ],
-        "voicelist" : [ "AvianFlu", "SubStack", "nlco" ],
+        "voicelist" : [ "AvianFlu", "SubStack", "nlco", "nexxy" ],
         "banlist" : []
       }
     },
@@ -29,10 +29,10 @@
     ],
     "auth" : {
       "twitter" : {
-        "consumer_key" : "",
-        "consumer_secret" : "",
-        "access_token_key" : "",
-        "access_token_secret" : ""
+        "consumer_key" : "sWvfF8J95xN2hGYRQ",
+        "consumer_secret" : "0KYKek4Lh0RmAzQfV0MupQ0Ke7DCg12fa0dzl3J5kQ",
+        "access_token_key" : "299396879-93zJ6HBIz7YE6TYBsOZscQ4v7HjA0myLE8ttsPS3",
+        "access_token_secret" : "pNp1JlVmyaWED4G1PdchOoxs0auv6gPsVxbUp9YQ8"
       },
       "freenode" : {
         "nick" : "kohai",
