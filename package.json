@@ -16,7 +16,8 @@
     "translate" : "0.7.x",
     "JS-Entities" : ">=0.1.0",
     "twitter" : ">=0.1.17",
-    "nconf" : "0.1.x"
+    "nconf" : "0.1.x",
+    "colors" : "0.5.x"
   },
   "devDependencies": {}
 }

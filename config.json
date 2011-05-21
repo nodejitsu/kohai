@@ -1,8 +1,8 @@
 {
   "config" : {
-    "nick" : "kohai",
+    "nick" : "MyCoolBot",
     "server" : "irc.freenode.net",
-    "channels" : ["#nodejitsu", "#nodetestsu", "#kohai"],
+    "channels" : ["#kohai", "#nodejitsu", "#nodetestsu"],
     "plugins" : {
       "twitter" : {
         "track" : [
@@ -12,7 +12,7 @@
       "alias" : {
         "whitelist" : [ "AvianFlu", "Marak", "hij1nx", "indexzero", "DTrejo", "tmpvar", "ryah", "dominictarr" ]
       },
-      "freenode" : {
+      "irc" : {
         "mute_timer" : 60,
         "command_string" : "!",
         "oplist" : [ "Marak", "hij1nx", "indexzero" ],
@@ -22,20 +22,20 @@
     },
     "modules" : [
       
-      "freenode",
+      "irc",
       "alias",
       "twitter",
       "translate"
     ],
     "auth" : {
       "twitter" : {
-        "consumer_key" : "",
-        "consumer_secret" : "",
-        "access_token_key" : "",
-        "access_token_secret" : ""
+        "consumer_key" : "lol",
+        "consumer_secret" : "lol",
+        "access_token_key" : "lol",
+        "access_token_secret" : "lol"
       },
-      "freenode" : {
-        "nick" : "kohai",
+      "irc" : {
+        "nick" : "MyCoolBot",
         "password" : ""
       }
     }
