@@ -2,7 +2,7 @@
   "config" : {
     "nick" : "kohai",
     "server" : "irc.freenode.net",
-    "channels" : ["#nodejitsu", "#nodetestsu"],
+    "channels" : ["#nodefarm", "#nodetestsu"],
     "plugins" : {
       "twitter" : {
         "track" : [
@@ -13,7 +13,8 @@
         "whitelist" : [ "AvianFlu", "Marak", "hij1nx", "indexzero" ]
       },
       "freenode" : {
-        "command_string" : "!",
+        "mute_timer" : 60000,
+        "command_string" : "hey\\sstupid,\\s",
         "oplist" : [ "Marak", "hij1nx", "indexzero" ],
         "voicelist" : [ "AvianFlu", "SubStack", "nlco" ],
         "banlist" : []
