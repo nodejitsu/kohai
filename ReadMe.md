@@ -1,3 +1,4 @@
+
 # kohai - pluggable irc bot for managing real-time data events
 
 *I am Kohai, semi-useful communications-facilitating pseudointelligence!*
@@ -22,7 +23,7 @@ We look forward to seeing your patches and continuing to improve this library.
 
 kohai will now start up and connect to its default channels on irc.freenode.net. Please note that the included configuration file will not successfully connect to Twitter - the Twitter API requires that apps register and acquire several keys before using the API, all of which can be accomplished at http://dev.twitter.com.
 
-# Notable Operator IRC Triggers
+# Notable Administrator IRC Triggers
 
      !tweet <message>
 
@@ -62,12 +63,11 @@ By default, the `config.json` will not contain any Twitter API keys. You'll need
       "#nodejs", "node.js", "@maraksquires", "@nodejitsu", "@nodekohai", "nodejitsu", "#nodejitsu", "marak squires", "#nodeconf", "#jsconf", "dnode", "nconf"
     ]
 
-## Whitelist Operators
+## Adding Admin users to the whitelist by IRC handle
 
 `config.plugins.alias.whitelist` - array of IRC users with Operator privileges
 
     "alias" : {
       "whitelist" : [ "AvianFlu", "Marak", "hij1nx", "indexzero", "DTrejo", "tmpvar", "ryah", "dominictarr" ]
     }
-
 
