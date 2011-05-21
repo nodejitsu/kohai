@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 // Require kohai as a node.js module
 // Once it's loaded, execute the start method
 var kohai = require('../lib/kohai');
