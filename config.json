@@ -2,7 +2,7 @@
   "config" : {
     "nick" : "kohai",
     "server" : "irc.freenode.net",
-    "channels" : ["#Node.js", "#nodejitsu", "#nodetestsu"],
+    "channels" : ["#nodejitsu", "#nodetestsu", "#kohai"],
     "plugins" : {
       "twitter" : {
         "track" : [

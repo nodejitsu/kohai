@@ -21,7 +21,7 @@ We look forward to seeing your patches and continuing to improve this library.
      node bin/kohai
      
 
-kohai will now start up and connect to its default channels on irc.freenode.net. Please note that the included configuration file will not successfully connect to Twitter - the Twitter API requires that apps register and acquire several keys before using the API, all of which can be accomplished at http://dev.twitter.com.
+kohai will now start up and connect to its default channels on irc.freenode.net.
 
 # Notable Administrator IRC Triggers
 
