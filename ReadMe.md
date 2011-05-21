@@ -1,5 +1,3 @@
-
-
 # kohai - pluggable irc bot for managing real-time data events
 
 *I am Kohai, semi-useful communications-facilitating pseudointelligence!*
@@ -21,6 +19,7 @@ We look forward to seeing your patches and continuing to improve this library.
 
      git clone git://github.com/nodejitsu/kohai.git
      cd kohai
+     npm install
      node bin/kohai
      
 
