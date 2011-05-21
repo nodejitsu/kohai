@@ -71,3 +71,8 @@ Insults a user
      !gtfo
 
 Tells kohai to shutdown
+
+
+##Contributors: 
+
+###Bradley Meck, Charles McConnell, Marak Squires
