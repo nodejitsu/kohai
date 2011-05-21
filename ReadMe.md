@@ -1,4 +1,5 @@
 
+
 # kohai - pluggable irc bot for managing real-time data events
 
 *I am Kohai, semi-useful communications-facilitating pseudointelligence!*
@@ -22,20 +23,6 @@ We look forward to seeing your patches and continuing to improve this library.
      
 
 kohai will now start up and connect to its default channels on irc.freenode.net.
-
-# Notable Administrator IRC Triggers
-
-     !tweet <message>
-
-Tweets message from configured Twitter account
-
-     !insult <user>
-     
-Insults a user
-
-     !gtfo
-
-Tells kohai to shutdown
 
 # Configuration
 
@@ -71,3 +58,16 @@ By default, the `config.json` will not contain any Twitter API keys. You'll need
       "whitelist" : [ "AvianFlu", "Marak", "hij1nx", "indexzero", "DTrejo", "tmpvar", "ryah", "dominictarr" ]
     }
 
+## Notable Administrator IRC Triggers
+
+     !tweet <message>
+
+Tweets message from configured Twitter account
+
+     !insult <user>
+
+Insults a user
+
+     !gtfo
+
+Tells kohai to shutdown
