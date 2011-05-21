@@ -17,20 +17,54 @@ We look forward to seeing your patches and continuing to improve this library.
 
      git clone git://github.com/nodejitsu/kohai.git
      cd kohai
-     node bin/server
+     node bin/kohai
      
 
 kohai will now start up and connect to its default channels on irc.freenode.net. Please note that the included configuration file will not successfully connect to Twitter - the Twitter API requires that apps register and acquire several keys before using the API, all of which can be accomplished at http://dev.twitter.com.
 
+# Notable Operator IRC Triggers
 
-# Configuration 
+     !tweet <message>
 
-The config.json file in kohai's root directory contains all currently implemented configuration options - a fresh git clone will at least need to edit the name, auth.twitter and auth.irc fields in order to connect properly and achieve full IRC and Twitter functionality.  If the twitter credentials provided are invalid, the IRC connection and all IRC functionality will still work, but the Twitter commands, obviously, will not.  
+Tweets message from configured Twitter account
 
-config.plugins.twitter.track is an array of all the terms you want to search twitter for - there is code in place to reduce, if not eliminate, retweet spam in chat.  Please note that the Twitter API will not return tweets containing #topic if your track array only contains "topic", rather than "#topic".  
+     !insult <user>
+     
+Insults a user
 
-We have included a whitelist in config.json so that the triggers in ./lib/plugins/alias.js - largely sensitive commands - are only available to a list of pre-approved users.  
+     !gtfo
 
-config.plugins.irc is a set of IRC-specific options.  Note that mute_timer is in seconds rather than milliseconds.  command_string sets the bot's command string - at present the string is put straight into a new RegExp() object, so a space is \\\\s, etc.  The op, voice, and ban lists are checked when users join any channel that kohai is in, but the commands will only work if kohai has been made a channel op.  
+Tells kohai to shutdown
 
-config.modules is the list of modules to load - the only steps necessary to load a new module are to add its name here and to add the actual module to ./lib/plugins - black-belt nodejitsu automagic handles the rest.  
+# Configuration
+
+All `kohai` configuration settings are stored in the `config.json` file. 
+
+## Setting up Twitter
+
+By default, the `config.json` will not contain any Twitter API keys. You'll need to setup:
+
+`config.auth.twitter.consumer_key`
+`config.auth.twitter.consumer_secret`
+`config.auth.twitter.access_token_key`
+`config.auth.twitter.access_token_secret`
+
+[Here is a link with further information on getting these keys from Twitter](https://dev.twitter.com/apps/new)
+
+## Tracking keywords on Twitter
+
+`config.plugins.twitter.track` - array of keywords to search for on Twitter
+
+    "track" : [
+      "#nodejs", "node.js", "@maraksquires", "@nodejitsu", "@nodekohai", "nodejitsu", "#nodejitsu", "marak squires", "#nodeconf", "#jsconf", "dnode", "nconf"
+    ]
+
+## Whitelist Operators
+
+`config.plugins.alias.whitelist` - array of IRC users with Operator privileges
+
+    "alias" : {
+      "whitelist" : [ "AvianFlu", "Marak", "hij1nx", "indexzero", "DTrejo", "tmpvar", "ryah", "dominictarr" ]
+    }
+
+
