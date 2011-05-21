@@ -14,7 +14,7 @@
       },
       "freenode" : {
         "mute_timer" : 60000,
-        "command_string" : "hey\\sstupid,\\s",
+        "command_string" : "!",
         "oplist" : [ "Marak", "hij1nx", "indexzero" ],
         "voicelist" : [ "AvianFlu", "SubStack", "nlco" ],
         "banlist" : []
