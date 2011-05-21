@@ -1,6 +1,6 @@
 {
   "config" : {
-    "nick" : "MyCoolBot",
+    "nick" : "kohai",
     "server" : "irc.freenode.net",
     "channels" : ["#kohai", "#nodejitsu", "#nodetestsu"],
     "plugins" : {
@@ -29,13 +29,13 @@
     ],
     "auth" : {
       "twitter" : {
-        "consumer_key" : "lol",
-        "consumer_secret" : "lol",
-        "access_token_key" : "lol",
-        "access_token_secret" : "lol"
+        "consumer_key" : "",
+        "consumer_secret" : "",
+        "access_token_key" : "",
+        "access_token_secret" : ""
       },
       "irc" : {
-        "nick" : "MyCoolBot",
+        "nick" : "kohai",
         "password" : ""
       }
     }
