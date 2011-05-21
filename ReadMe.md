@@ -31,6 +31,6 @@ config.plugins.twitter.track is an array of all the terms you want to search twi
 
 We have included a whitelist in config.json so that the triggers in ./lib/plugins/alias.js - largely sensitive commands - are only available to a list of pre-approved users.  
 
-config.plugins.irc is a set of IRC-specific options.  Note that mute_timer is in *seconds*.  command_string sets the bot's command string - at present the string is put straight into a new RegExp() object, so a space is \\s, etc.  The op, voice, and ban lists are checked when users join any channel that kohai is in, but the commands will only work if kohai has been made a channel op.  
+config.plugins.irc is a set of IRC-specific options.  Note that mute_timer is in seconds rather than milliseconds.  command_string sets the bot's command string - at present the string is put straight into a new RegExp() object, so a space is \\\\s, etc.  The op, voice, and ban lists are checked when users join any channel that kohai is in, but the commands will only work if kohai has been made a channel op.  
 
 config.modules is the list of modules to load - the only steps necessary to load a new module are to add its name here and to add the actual module to ./lib/plugins - black-belt nodejitsu automagic handles the rest.  
