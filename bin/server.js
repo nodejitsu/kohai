@@ -1,6 +1,5 @@
 //grab node-irc (available on npm)
 var irc = require("irc")
-arghelper = require("../lib/utils/arguments.js") //this can either go into ./plugins/alias.js or stay here with no 'var'
 fs = require("fs")
 nconf = require("nconf")
 //our bot is exportable
