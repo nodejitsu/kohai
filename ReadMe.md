@@ -45,8 +45,11 @@ All `kohai` configuration settings are stored in the `config.json` file.
 By default, the `config.json` will not contain any Twitter API keys. You'll need to setup:
 
 `config.auth.twitter.consumer_key`
+
 `config.auth.twitter.consumer_secret`
+
 `config.auth.twitter.access_token_key`
+
 `config.auth.twitter.access_token_secret`
 
 [Here is a link with further information on getting these keys from Twitter](https://dev.twitter.com/apps/new)
