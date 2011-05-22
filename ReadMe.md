@@ -32,7 +32,7 @@ Check out our [Issue Tracker](https://github.com/nodejitsu/kohai/issues), we hav
 
 # Configuration
 
-All `kohai` configuration settings are stored in the `config.json` file. kohai ships with a config.json.defaults file that contains the structure and default values for kohai's configuration - when kohai starts up the first time, this file will be used to create config.json, which can then be configured manually or with kohai's !configure command.  
+All `kohai` configuration settings are stored in the `config.json` file. `kohai` ships with a `config.json.defaults` file that contains the structure and default values for kohai's configuration - when `kohai` starts up the first time, this file will be used to create `config.json`, which can then be configured manually or with kohai's !configure command.  
 
 ## Setting up Twitter
 
@@ -76,11 +76,11 @@ Insults a user
 
      !stfu <user>
 
-Temporarily mutes a user.  Requires kohai to be an op in the related channel.  
+Temporarily mutes a user.  Requires `kohai` to be an op in the related channel.  
 
      !config <add|rm|set|get|save> <path:in:config> <value to set, add, or remove>
      
-Allows for alteration of kohai's configuration data on the fly.  Options will take effect immediately, but !config save is required to persist kohai's settings to disk.  For example:
+Allows for alteration of kohai's configuration data on the fly.  Options will take effect immediately, but `!config save` is required to persist kohai's settings to disk.  For example:
 
      !config add plugins:alias:whitelist someguy
      !config get plugins:alias:whitelist
@@ -90,7 +90,7 @@ Would add "someguy" to the admin whitelist, show the whitelist to the channel th
 
      !kick/!ban/!unban <user>
 
-Perform the associated IRC action - again, kohai must be an op.  Please note that !ban also kicks the banned user. 
+Perform the associated IRC action - again, `kohai` must be an op.  Please note that `!ban` also kicks the banned user. 
 
      !gtfo
 
