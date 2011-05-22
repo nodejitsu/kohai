@@ -1,0 +1,76 @@
+
+  "config": {
+    "version" : "v0.0.4",
+    "nick": "kohai-default",
+    "server": "irc.freenode.net",
+    "channels": [
+      "#kohai"
+    ],
+    "plugins": {
+      "twitter": {
+        "track": [
+          "#nodejs",
+          "node.js",
+          "@maraksquires",
+          "@nodejitsu",
+          "@nodekohai",
+          "nodejitsu",
+          "#nodejitsu",
+          "marak squires",
+          "#nodeconf",
+          "#jsconf",
+          "dnode",
+          "nconf"
+        ]
+      },
+      "alias": {
+        "whitelist": [
+          "AvianFlu",
+          "Marak",
+          "hij1nx",
+          "indexzero",
+          "DTrejo",
+          "tmpvar",
+          "ryah",
+          "dominictarr",
+          "samsonjs"
+        ]
+      },
+      "irc": {
+        "mute_timer": 60,
+        "command_string": "!",
+        "oplist": [
+          "Marak",
+          "hij1nx",
+          "indexzero"
+        ],
+        "voicelist": [
+          "AvianFlu",
+          "SubStack",
+          "nlco",
+          "nexxy",
+          "samsonjs"
+        ],
+        "banlist": []
+      }
+    },
+    "modules": [
+      "irc",
+      "alias",
+      "twitter",
+      "translate"
+    ],
+    "auth": {
+      "twitter": {
+        "consumer_key": "",
+        "consumer_secret": "",
+        "access_token_key": "",
+        "access_token_secret": ""
+      },
+      "irc": {
+        "nick": "kohai-default",
+        "password": ""
+      }
+    }
+  }
+}
