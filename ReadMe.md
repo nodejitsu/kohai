@@ -32,7 +32,7 @@ Check out our [Issue Tracker](https://github.com/nodejitsu/kohai/issues), we hav
 
 # Configuration
 
-All `kohai` configuration settings are stored in the `config.json` file. kohai ships with a config.json.defaults file that contains the structure and default values for kohai's configuration - simply add desired irc & Twitter credentials, change the bot's name and command string if desired , and kohai is ready for action.  
+All `kohai` configuration settings are stored in the `config.json` file. kohai ships with a config.json.defaults file that contains the structure and default values for kohai's configuration - when kohai starts up the first time, this file will be used to create config.json, which can then be configured manually or with kohai's !configure command.  
 
 ## Setting up Twitter
 
