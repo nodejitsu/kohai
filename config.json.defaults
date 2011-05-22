@@ -1,10 +1,11 @@
-
+{
   "config": {
     "version" : "v0.0.4",
     "nick": "kohai-default",
     "server": "irc.freenode.net",
     "channels": [
-      "#kohai"
+      "#kohai",
+      "#nodetestsu"
     ],
     "plugins": {
       "twitter": {
@@ -38,7 +39,7 @@
       },
       "irc": {
         "mute_timer": 60,
-        "command_string": "!",
+        "command_string": "hey\\sstupid,\\s",
         "oplist": [
           "Marak",
           "hij1nx",
