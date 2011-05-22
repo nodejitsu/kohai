@@ -74,6 +74,14 @@ Tweets message from configured Twitter account
 
 Insults a user
 
+     !stfu <user>
+
+Temporarily mutes a user
+
+     !kick/!ban/!unban <user>
+
+Perform the associated IRC action.  Note that !ban also kicks the banned user.  
+
      !gtfo
 
 Tells kohai to shutdown
