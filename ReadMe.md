@@ -5,7 +5,7 @@
 
 [http://twitter.com/NodeKohai](http://twitter.com/NodeKohai)
 
-##v0.0.4 - Experimental
+##v0.0.5 - Experimental
 
 Due to the high volume of requests in the #Node.js and #nodejitsu IRC rooms on irc.freenode.net, we've open-sourced this library. 
 
@@ -32,7 +32,7 @@ Check out our [Issue Tracker](https://github.com/nodejitsu/kohai/issues), we hav
 
 # Configuration
 
-All `kohai` configuration settings are stored in the `config.json` file. 
+All `kohai` configuration settings are stored in the `config.json` file. kohai ships with a config.json.defaults file that contains the structure and default values for kohai's configuration - simply add desired irc & Twitter credentials, change the bot's name and command string if desired , and kohai is ready for action.  
 
 ## Setting up Twitter
 
