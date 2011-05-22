@@ -76,11 +76,11 @@ Insults a user
 
      !stfu <user>
 
-Temporarily mutes a user
+Temporarily mutes a user.  Requires kohai to be an op in the related channel.  
 
      !kick/!ban/!unban <user>
 
-Perform the associated IRC action.  Note that !ban also kicks the banned user.  
+Perform the associated IRC action - again, kohai must be an op.  Please note that !ban also kicks the banned user. 
 
      !gtfo
 
