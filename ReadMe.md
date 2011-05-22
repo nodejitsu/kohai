@@ -5,7 +5,7 @@
 
 [http://twitter.com/NodeKohai](http://twitter.com/NodeKohai)
 
-##v0.0.3 - Experimental
+##v0.0.4 - Experimental
 
 Due to the high volume of requests in the #Node.js and #nodejitsu IRC rooms on irc.freenode.net, we've open-sourced this library. 
 
