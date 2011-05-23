@@ -1,6 +1,6 @@
 {
   "config": {
-    "version" : "v0.0.5",
+    "version": "v0.0.5",
     "nick": "kohai-default",
     "server": "irc.freenode.net",
     "channels": [
@@ -39,7 +39,7 @@
       },
       "irc": {
         "mute_timer": 60,
-        "command_string": "hey\\sstupid,\\s",
+        "command_string": "~",
         "oplist": [
           "Marak",
           "hij1nx",
