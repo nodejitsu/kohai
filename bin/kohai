@@ -4,5 +4,5 @@
 // Once it's loaded, execute the start method
 var kohai = require('../lib/kohai');
 
-// kohai will now start up and connect to the IRC specified in your config.json
-kohai.start();
+// kohai will now start up and connect to the IRC specified in your config.json file
+kohai.start(kohai.getConfig());
