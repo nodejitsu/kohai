@@ -39,7 +39,11 @@
       },
       "irc": {
         "mute_timer": 60,
+<<<<<<< HEAD:config.json.defaults
         "command_string": "~",
+=======
+        "command_string": "!!",
+>>>>>>> 9902460aab17bb3500750e000141824846c547af:config.json.defaults
         "oplist": [
           "Marak",
           "hij1nx",
