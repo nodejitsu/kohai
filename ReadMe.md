@@ -5,7 +5,7 @@
 
 [http://twitter.com/NodeKohai](http://twitter.com/NodeKohai)
 
-##v0.0.2 - Experimental
+##v0.0.5 - Experimental
 
 Due to the high volume of requests in the #Node.js and #nodejitsu IRC rooms on irc.freenode.net, we've open-sourced this library. 
 
@@ -32,7 +32,7 @@ Check out our [Issue Tracker](https://github.com/nodejitsu/kohai/issues), we hav
 
 # Configuration
 
-All `kohai` configuration settings are stored in the `config.json` file. 
+All `kohai` configuration settings are stored in the `config.json` file. `kohai` ships with a `config.json.defaults` file that contains the structure and default values for kohai's configuration - when `kohai` starts up the first time, this file will be used to create `config.json`, which can then be configured manually or with kohai's !configure command.  
 
 ## Setting up Twitter
 
@@ -58,7 +58,7 @@ By default, the `config.json` will not contain any Twitter API keys. You'll need
 
 ## Adding Admin users to the whitelist by IRC handle
 
-`config.plugins.alias.whitelist` - array of IRC users with Operator privileges
+`config.plugins.alias.whitelist` - array of IRC users with access to kohai's administrator IRC triggers
 
     "alias" : {
       "whitelist" : [ "AvianFlu", "Marak", "hij1nx", "indexzero", "DTrejo", "tmpvar", "ryah", "dominictarr" ]
@@ -76,11 +76,21 @@ Insults a user
 
      !stfu <user>
 
-Temporarily mutes a user.  Requires kohai to be an op in the related channel.  
+Temporarily mutes a user.  Requires `kohai` to be an op in the related channel.  
+
+     !config <add|rm|set|get|save> <path:in:config> <value to set, add, or remove>
+     
+Allows for alteration of kohai's configuration data on the fly.  Options will take effect immediately, but `!config save` is required to persist kohai's settings to disk.  For example:
+
+     !config add plugins:alias:whitelist someguy
+     !config get plugins:alias:whitelist
+     !config save
+     
+Would add "someguy" to the admin whitelist, show the whitelist to the channel the command came from, and save the new config to disk.
 
      !kick/!ban/!unban <user>
 
-Perform the associated IRC action - again, kohai must be an op.  Please note that !ban also kicks the banned user. 
+Perform the associated IRC action - again, `kohai` must be an op.  Please note that `!ban` also kicks the banned user. 
 
      !gtfo
 
