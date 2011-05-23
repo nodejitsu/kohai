@@ -1,11 +1,10 @@
 {
   "config": {
-    "version": "v0.0.5",
+    "version": "v0.0.6",
     "nick": "kohai-default",
     "server": "irc.freenode.net",
     "channels": [
-      "#kohai",
-      "#nodetestsu"
+      "#kohai"
     ],
     "plugins": {
       "twitter": {
@@ -19,7 +18,6 @@
           "#nodejitsu",
           "marak squires",
           "#nodeconf",
-          "#jsconf",
           "dnode",
           "nconf"
         ]
