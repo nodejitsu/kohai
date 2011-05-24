@@ -5,7 +5,7 @@
 
 [http://twitter.com/NodeKohai](http://twitter.com/NodeKohai)
 
-##v0.0.6 - Experimental
+##v0.0.7 - Experimental
 
 Due to the high volume of requests in the #Node.js and #nodejitsu IRC rooms on irc.freenode.net, we've open-sourced this library. 
 
@@ -91,6 +91,10 @@ Would add "someguy" to the admin whitelist, show the whitelist to the channel th
      !kick/!ban/!unban <user>
 
 Perform the associated IRC action - again, `kohai` must be an op.  Please note that `!ban` also kicks the banned user. 
+
+     !join/!part <channel>
+     
+Joins or leaves the specified IRC channel.  
 
      !gtfo
 
