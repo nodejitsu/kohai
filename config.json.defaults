@@ -47,6 +47,9 @@
           "samsonjs"
         ],
         "banlist": []
+      },
+      "volume": {
+        "channels" : []
       }
     },
     "modules": [
