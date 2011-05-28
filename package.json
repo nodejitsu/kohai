@@ -1,7 +1,7 @@
 {
   "name": "kohai",
   "author": "nodejitsu",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "repository": {
     "type": "git",
     "url": "git@github.com:nodejitsu/kohai.git"
@@ -17,7 +17,9 @@
     "JS-Entities" : ">=0.1.0",
     "twitter" : ">=0.1.17",
     "nconf" : "0.1.x",
-    "colors" : "0.5.x"
+    "colors" : "0.5.x",
+    "dnode" : "0.6.x",
+    "hashish" : ">=0.0.2"
   },
   "devDependencies": {}
 }
