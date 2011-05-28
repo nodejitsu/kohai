@@ -5,7 +5,7 @@
 
 [http://twitter.com/NodeKohai](http://twitter.com/NodeKohai)
 
-##v0.0.7 - Experimental
+##v0.0.8 - Experimental
 
 Due to the high volume of requests in the #Node.js and #nodejitsu IRC rooms on irc.freenode.net, we've open-sourced this library. 
 
@@ -72,7 +72,7 @@ Tweets message from configured Twitter account
 
      !insult <user>
 
-Insults a user
+Insults a user with one of several random insults
 
      !stfu <user>
 
