@@ -1,6 +1,6 @@
 {
   "config": {
-    "version": "v0.0.7a",
+    "version": "v0.0.8",
     "nick": "kohai-default",
     "server": "irc.freenode.net",
     "channels": [
