@@ -46,10 +46,33 @@
           "nexxy",
           "samsonjs"
         ],
-        "banlist": []
-      },
-      "volume": {
-        "channels" : []
+        "banlist": [],
+        "channels" : [
+          "#kohai" : {
+            "mute_timer": 60,
+            "command_string": "~",
+            "oplist": [],
+            "voicelist": [],
+            "banlist": [],
+            "volume": 10
+          },
+          "#nodetestsu" : {
+            "mute_timer": 60,
+            "command_string": "~",
+            "oplist": [],
+            "voicelist": [],
+            "banlist": [],
+            "volume": 10
+          }
+        ],
+        "channelDefault" : {
+          "mute_timer": 60,
+          "command_string": "~",
+          "oplist": [],
+          "voicelist": [],
+          "banlist": [],
+          "volume": 10
+        }
       }
     },
     "modules": [
