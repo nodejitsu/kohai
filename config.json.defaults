@@ -32,21 +32,17 @@
         ]
       },
       "irc": {
-        "mute_timer": 60,
-        "command_string": "~",
-        "oplist": [
-          "Marak",
-          "hij1nx",
-          "indexzero"
-        ],
-        "voicelist": [
-          "AvianFlu",
-          "SubStack",
-          "nlco",
-          "nexxy",
-          "samsonjs"
-        ],
-        "banlist": [],
+        "channelDefault" : {
+          "mute_timer": 60,
+          "command_string": "~",
+          "oplist": [],
+          "voicelist": [],
+          "banlist": [],
+          "volume": 10,
+          "chatRate": 0,
+          "messageCount": 0,
+          "rollingValues": []
+        },
         "channels" : [
           "#kohai" : {
             "mute_timer": 60,
@@ -70,18 +66,7 @@
             "messageCount": 0,
             "rollingValues": []
           }
-        ],
-        "channelDefault" : {
-          "mute_timer": 60,
-          "command_string": "~",
-          "oplist": [],
-          "voicelist": [],
-          "banlist": [],
-          "volume": 10,
-          "chatRate": 0,
-          "messageCount": 0,
-          "rollingValues": []
-        }
+        ]
       }
     },
     "modules": [
