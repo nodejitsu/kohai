@@ -16,7 +16,9 @@
           "@nodekohai",
           "nodejitsu",
           "#nodejitsu"
-        ]
+        ],
+        "userid": "",
+        "autofollow": "false"
       },
       "alias": {
         "whitelist": [
