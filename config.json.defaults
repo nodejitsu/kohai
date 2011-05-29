@@ -43,7 +43,7 @@
           "messageCount": 0,
           "rollingValues": []
         },
-        "channels" : [
+        "channels" : {
           "#kohai" : {
             "mute_timer": 60,
             "command_string": "~",
@@ -66,7 +66,7 @@
             "messageCount": 0,
             "rollingValues": []
           }
-        ]
+        }
       }
     },
     "modules": [
