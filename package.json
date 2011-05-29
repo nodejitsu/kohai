@@ -1,7 +1,8 @@
 {
   "name": "kohai",
   "author": "nodejitsu",
-  "version": "0.0.8",
+  "version": "0.0.81",
+  "preferGlobal": "true",
   "repository": {
     "type": "git",
     "url": "git@github.com:nodejitsu/kohai.git"
@@ -22,5 +23,8 @@
     "hashish" : ">=0.0.2",
     "winston" : "0.2.x"
   },
-  "devDependencies": {}
+  "devDependencies": {},
+  "bin": {
+    "kohai": "./bin/kohai"
+  }
 }
