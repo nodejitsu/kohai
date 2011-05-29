@@ -19,7 +19,8 @@
     "nconf" : "0.1.x",
     "colors" : "0.5.x",
     "dnode" : "0.6.x",
-    "hashish" : ">=0.0.2"
+    "hashish" : ">=0.0.2",
+    "winston" : "0.2.x"
   },
   "devDependencies": {}
 }
