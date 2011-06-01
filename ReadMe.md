@@ -5,7 +5,7 @@
 
 [http://twitter.com/NodeKohai](http://twitter.com/NodeKohai)
 
-##v0.0.8 - Experimental
+##v0.0.82 - Experimental
 
 Due to the high volume of requests in the #Node.js and #nodejitsu IRC rooms on irc.freenode.net, we've open-sourced this library. 
 
@@ -55,6 +55,16 @@ By default, the `config.json` will not contain any Twitter API keys. You'll need
     "track" : [
       "#nodejs", "node.js", "@maraksquires", "@nodejitsu", "@nodekohai", "nodejitsu", "#nodejitsu", "marak squires", "#nodeconf", "#jsconf", "dnode", "nconf"
     ]
+
+##Dynamic Twitter Rate-Limiting
+
+`kohai` has been designed to get out of the way when an active conversation starts up in a joined channel, and keeps a rolling average of messages per second to achieve this.  
+
+In addition to the rate-limiting, `kohai` also implements a Levenshtein-based similar tweet filter - each new incoming tweet is checked against recent tweets, and any tweet closer than the filter distance will be suppressed.  This means a big reduction in spam from retweets and bots!  The exact filtering level can be adjusted:
+
+     !config set plugins:twitter:filter <number>
+
+The default is 25; values between 10 and 40 are recommended for ordinary spam filtering purposes.  
 
 ## Adding Admin users to the whitelist by IRC handle
 
