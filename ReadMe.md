@@ -5,7 +5,7 @@
 
 [http://twitter.com/NodeKohai](http://twitter.com/NodeKohai)
 
-##v0.0.82 - Experimental
+##v0.0.84 - Experimental
 
 Due to the high volume of requests in the #Node.js and #nodejitsu IRC rooms on irc.freenode.net, we've open-sourced this library. 
 
@@ -109,6 +109,10 @@ Joins or leaves the specified IRC channel.
      !gtfo
 
 Tells kohai to shutdown
+
+     !help
+     
+Displays a list of commands.  
 
 
 ##Contributors: 
