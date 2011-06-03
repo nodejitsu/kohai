@@ -19,7 +19,8 @@
           "#nodejitsu"
         ],
         "userid": "",
-        "autofollow": "false"
+        "autofollow": "false",
+        "recentTweets": []
       },
       "alias": {
         "whitelist": [
