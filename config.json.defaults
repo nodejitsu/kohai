@@ -1,6 +1,6 @@
 {
   "config": {
-    "version": "v0.0.82",
+    "version": "v0.0.84",
     "nick": "kohai-default",
     "server": "irc.freenode.net",
     "channels": [
@@ -44,7 +44,9 @@
           "volume": 10,
           "chatRate": 0,
           "messageCount": 0,
-          "rollingValues": []
+          "rollingValues": [],
+          "currentTweetCount": 0,
+          "lastVolume": 0
         },
         "channels" : {
           "#kohai" : {
@@ -56,7 +58,9 @@
             "volume": 10,
             "chatRate": 0,
             "messageCount": 0,
-            "rollingValues": []
+            "rollingValues": [],
+            "currentTweetCount": 0,
+            "lastVolume": 0
           },
           "#nodetestsu" : {
             "mute_timer": 60,
@@ -67,7 +71,9 @@
             "volume": 10,
             "chatRate": 0,
             "messageCount": 0,
-            "rollingValues": []
+            "rollingValues": [],
+            "currentTweetCount": 0,
+            "lastVolume": 0
           }
         }
       }

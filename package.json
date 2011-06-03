@@ -1,7 +1,7 @@
 {
   "name": "kohai",
   "author": "nodejitsu",
-  "version": "0.0.83",
+  "version": "0.0.84",
   "preferGlobal": "true",
   "repository": {
     "type": "git",
@@ -23,8 +23,7 @@
     "hashish" : ">=0.0.2",
     "winston" : "0.2.x",
     "levenshtein" : ">=1.0.0",
-    "unshortener" : ">=0.0.6",
-    "bitly" : "1.0.x"
+    "unshortener" : ">=0.0.6"
   },
   "devDependencies": {},
   "bin": {
