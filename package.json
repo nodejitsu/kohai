@@ -9,7 +9,7 @@
   },
   "main": "./lib/kohai",
   "engines": {
-    "node": ">=0.4.7"
+    "node": ">=0.4"
   },
   "dependencies": {
     "irc" : "0.2.x",
