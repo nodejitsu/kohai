@@ -6,6 +6,15 @@
     "channels": [
       "#kohai"
     ],
+    "insults": [
+      "%% is a wombat-loving heifer-puncher!",
+      "%% is an unsightly trouser stain!",
+      "%% is a venomous lily-licker!",
+      "%% smells of elderberry wine!",
+      "%% is like one of those callbacks that just won't fire.",
+      "I slap thee verily with a trout quite large, %%!",
+      "%% actually looks rather nice today."
+    ],
     "plugins": {
       "twitter": {
         "filter" : 25,
@@ -99,4 +108,3 @@
     }
   }
 }
-
