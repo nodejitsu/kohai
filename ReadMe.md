@@ -88,13 +88,13 @@ Insults a user with one of several random insults
 
 Temporarily mutes a user.  Requires `kohai` to be an op in the related channel.  
 
-     !config <add|rm|set|get|save> <path:in:config> <value to set, add, or remove>
+     /msg kohai config <add|rm|set|get|save> <path:in:config> <value to set, add, or remove>
      
-Allows for alteration of kohai's configuration data on the fly.  Options will take effect immediately, but `!config save` is required to persist kohai's settings to disk.  For example:
+Allows for alteration of kohai's configuration data on the fly.  Due to the verbosity of many responses, configuration is conducted via private messages to `kohai`.  Options will take effect immediately, but `config save` is required to persist kohai's settings to disk.  For example:
 
-     !config add plugins:alias:whitelist someguy
-     !config get plugins:alias:whitelist
-     !config save
+     config add plugins:alias:whitelist someguy
+     config get plugins:alias:whitelist
+     config save
      
 Would add "someguy" to the admin whitelist, show the whitelist to the channel the command came from, and save the new config to disk.
 
