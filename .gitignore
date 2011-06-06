@@ -1,1 +1,10 @@
 config.json
+node_modules/colors/
+node_modules/cookies/
+node_modules/irc/
+node_modules/levenshtein/
+node_modules/nconf/
+node_modules/oauth/
+node_modules/pkginfo/
+node_modules/unshortener/
+node_modules/winston/
