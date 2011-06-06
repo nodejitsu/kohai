@@ -8,3 +8,4 @@ node_modules/oauth/
 node_modules/pkginfo/
 node_modules/unshortener/
 node_modules/winston/
+logs/
