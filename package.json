@@ -21,7 +21,8 @@
     "colors" : "0.5.x",
     "winston" : "0.2.x",
     "levenshtein" : ">=1.0.0",
-    "unshortener" : ">=0.0.6"
+    "unshortener" : ">=0.0.6",
+    "async" : ">=0.1.9"
   },
   "devDependencies": {},
   "bin": {
