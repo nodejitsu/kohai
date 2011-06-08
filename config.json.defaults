@@ -104,6 +104,10 @@
       "irc": {
         "nick": "kohai-default",
         "password": ""
+      },
+      "bitly": {
+        "user": "",
+        "key": ""
       }
     }
   }
