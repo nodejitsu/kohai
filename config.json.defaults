@@ -29,7 +29,9 @@
         ],
         "userid": "",
         "autofollow": "false",
-        "recentTweets": []
+        "recentTweets": [],
+        "recentUrls": [],
+        "recentCount": 3
       },
       "alias": {
         "whitelist": [
