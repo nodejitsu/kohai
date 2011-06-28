@@ -16,6 +16,14 @@
       "%% actually looks rather nice today."
     ],
     "plugins": {
+      "ping": {
+        "interval": 30000,
+        "urls": {
+          "http://www.nodejitsu.com/",
+          "http://blog.nodejitsu.com/"
+        },
+        "failMessage": "Oops! Bad news here, guys!"
+      },
       "twitter": {
         "filter" : 25,
         "track": [
