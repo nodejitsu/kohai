@@ -1,7 +1,7 @@
 {
   "name": "kohai",
   "author": "nodejitsu",
-  "version": "0.0.85",
+  "version": "0.0.8-6",
   "preferGlobal": "true",
   "repository": {
     "type": "git",
