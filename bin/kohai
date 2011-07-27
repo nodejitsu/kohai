@@ -1,8 +1,11 @@
 #!/usr/bin/env node
 
-// Require kohai as a node.js module
-// Once it's loaded, execute the start method
-var kohai = require('../lib/kohai');
+var Kohai = require('../lib/kohai').Kohai,
+	argv = require('optimist').argv;
 
-// kohai will now start up and connect to the IRC specified in your config.json file
-kohai.start(kohai.getConfig());
+var kohai = new Kohai({
+  name: 'kohai',
+  idCheck: true
+});
+
+kohai.start();
