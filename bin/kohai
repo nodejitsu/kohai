@@ -4,8 +4,7 @@ var Kohai = require('../lib/kohai').Kohai,
 	argv = require('optimist').argv;
 
 var kohai = new Kohai({
-  name: 'kohai',
-  idCheck: true
+  name: 'kohai'
 });
 
 kohai.start();
