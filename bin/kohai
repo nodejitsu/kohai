@@ -1,10 +1,10 @@
 #!/usr/bin/env node
 
-var Kohai = require('../lib/kohai').Kohai,
-	argv = require('optimist').argv;
+var Kohai = require('../lib/kohai').Kohai;
 
 var kohai = new Kohai({
-  name: 'kohai'
+  name: 'kohai',
+  uid: 1000
 });
 
 kohai.start();
