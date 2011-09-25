@@ -12,7 +12,7 @@
     },
     "main": "./lib/kohai",
     "dependencies": {
-       "hook.io": "0.6.x",
+       "hook.io": "0.7.x",
        "colors": "0.5.x"
      }, 
     "engine": [
