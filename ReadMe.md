@@ -10,10 +10,11 @@
 Kohai is a communications-facilitating pseudointelligence (sometimes called a 'bot') used for managing real-time data events.  Kohai makes use of the [Hook.io](http://github.com/hookio/hook.io) framework to separate its I/O concerns and provide for greater extensibility and interoperability with new and different sources of real-time data.
 
 Kohai, out of the box, is a set of four hooks:
-- Hook.io-IRC, for IRC connectivity
-- Hook.io-Twitter, for Twitter API access
-- Hook.io-Mailer, for sending support emails
-- Kohai itself, containing the bot's core, IRC command logic, and hook.io event bindings
+  
+  - Hook.io-IRC, for IRC connectivity
+  - Hook.io-Twitter, for Twitter API access
+  - Hook.io-Mailer, for sending support emails
+  - Kohai itself, containing the bot's core, IRC command logic, and hook.io event bindings
 
 ## Installation
 
