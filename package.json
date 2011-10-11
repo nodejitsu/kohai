@@ -15,7 +15,7 @@
        "hook.io": "0.7.x",
        "colors": "0.5.x",
        "hook.io-irc": "0.4.x",
-       "hook.io-twitter": "0.3.x",
+       "hook.io-twitter": "0.2.x",
        "hook.io-mailer": "0.3.x"
      }, 
     "engine": [
