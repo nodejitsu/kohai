@@ -40,7 +40,8 @@
     "jitsu": "A CLI tool for deploying your apps to the Nodejitsu hosting platform - http://github.com/nodejitsu/jitsu",
     "hook.io": "A distributed cross-platform namespaced event system using dnode and EventEmitter2 - http://github.com/hookio/hook.io",
     "node-prompt": "An easy-to-use library for getting input from users while your program is running - http://github.com/nodejitsu/node-prompt",
-    "gh": "Link to GitHub repositories, issues and commits: `!gh [user]`, `!gh [user]/[project]`, `!gh [user]/[project]@[sha]`, `!gh [user]/[project]#[issue]` are supported"
+    "gh": "Link to GitHub repositories, issues and commits: `!gh [user]`, `!gh [user]/[project]`, `!gh [user]/[project]@[sha]`, `!gh [user]/[project]#[issue]` are supported",
+    "like": "Type !like to select drink you get when you receive karma"
   },
   "irc-server": "irc.freenode.net",
   "port": 6667,
