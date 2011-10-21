@@ -1,7 +1,7 @@
 {
     "name": "kohai",
     "description": "IRC bot for managing real-time data events.",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "author": "AvianFlu",
     "repository": {
         "type": "git", 
