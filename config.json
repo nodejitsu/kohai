@@ -1,5 +1,10 @@
 {
-  "version": "v0.1.0",
+  "version": "v0.1.3",
+  "children": [
+    "irc",
+    "twitter",
+    "mailer"
+  ],
   "access": {
     "admin": [
       "AvianFlu",
@@ -21,6 +26,11 @@
       "TheJH"
     ]
   },
+  "ranks": [
+    "admin",
+    "employee",
+    "friend"
+  ],
   "insults": [
     "%% is a wombat-loving heifer-puncher!",
     "%% is an unsightly trouser stain!",
@@ -45,7 +55,7 @@
   },
   "irc-server": "irc.freenode.net",
   "port": 6667,
-  "nick": "kohai-default",
+  "nick": "kohai-unstable",
   "channels": ["#nodebombrange", "#kohai"],
   "showErrors": "true",
   "userName": "kohai",
