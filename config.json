@@ -55,7 +55,7 @@
   },
   "irc-server": "irc.freenode.net",
   "port": 6667,
-  "nick": "kohai-unstable",
+  "nick": "kohai-default",
   "channels": ["#nodebombrange", "#kohai"],
   "showErrors": "true",
   "userName": "kohai",
