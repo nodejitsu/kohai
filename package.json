@@ -2,7 +2,7 @@
   "name": "kohai",
   "description": "IRC bot for managing real-time data events.",
   "version": "0.1.3-1",
-  "author": "AvianFlu <charlie@charlieistheman.com>",
+  "author": "Nodejitsu <support@nodejitsu.com>",
   "repository": {
     "type": "git", 
     "url": "http://github.com/nodejitsu/kohai.git" 
@@ -12,11 +12,9 @@
   },
   "main": "./lib/kohai",
   "dependencies": {
-     "hook.io": "0.7.x",
+     "hook.io": "0.8.x",
      "colors": "0.5.x",
-     "hook.io-irc": "0.4.x",
-     "hook.io-twitter": "0.2.x",
-     "hook.io-mailer": "0.3.x"
+     "hook.io-irc": "0.4.x"
   },
   "engines": {
     "node": ">= 0.4.x < 0.7.x"

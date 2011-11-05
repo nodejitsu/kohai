@@ -3,7 +3,8 @@
 var Kohai = require('../lib/kohai').Kohai;
 
 var kohai = new Kohai({
-  name: 'kohai'
+  name: 'kohai',
+  debug: true
 });
 
 kohai.start();
