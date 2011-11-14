@@ -169,4 +169,4 @@ Once again, access to the main `kohai` object is preserved, and if multiple meth
 
 ##Contributors: 
 
-### Charles McConnell, Marak Squires, Bradley Meck, Jacob Chapel, samsonjs, slickplaid, micrypt, and others 
+### Charles McConnell, Marak Squires, Bradley Meck, Jacob Chapel, samsonjs, slickplaid, micrypt, and others  
