@@ -1,5 +1,4 @@
 #!/usr/bin/env node
-
 var Kohai = require('../lib/kohai').Kohai;
 
 var kohai = new Kohai({

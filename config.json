@@ -3,28 +3,20 @@
   "children": [
     "irc",
     "twitter",
-    "mailer"
+    "mailer",
+    "feedsub"
   ],
   "access": {
     "admin": [
-      "AvianFlu",
-      "Marak",
-      "indexzero",
-      "hij1nx"
+      "willwh"
     ],
     "employee": [
-      "SubStack",
-      "bradleymeck",
-      "jameson",
-      "jesusabdullah",
-      "slickplaid"
+      "Goune",
+      "Mifun",
+      "Anubis",
+      "Phineus"
     ],
-    "friend": [
-      "isaacs",
-      "indutny",
-      "ryah",
-      "TheJH"
-    ]
+    "friend": []
   },
   "ranks": [
     "admin",
@@ -41,26 +33,22 @@
     "%% actually looks rather nice today."
   ],
   "help": {
-    "password": "To reset your password, type `jitsu users forgot [username]`. To change it, type `jitsu users changepassword`.",
-    "handbook": "The complete Nodejitsu handbook can be read at http://github.com/nodejitsu/handbook",
-    "support": "If no one is here to help you, type `!support [msg]` to send an email to support@nodejitsu.com.",
-    "blog": "Our blog can be viewed at http://blog.nodejitsu.com - a number of tutorials can be found there.",
-    "forever": "Run and monitor your node.js processes forever - http://github.com/indexzero/forever",
-    "http-proxy": "A robust, full-featured HTTP proxy for Node.js with full websocket support - http://github.com/nodejitsu/node-http-proxy",
-    "jitsu": "A CLI tool for deploying your apps to the Nodejitsu hosting platform - http://github.com/nodejitsu/jitsu",
-    "hook.io": "A distributed cross-platform namespaced event system using dnode and EventEmitter2 - http://github.com/hookio/hook.io",
-    "node-prompt": "An easy-to-use library for getting input from users while your program is running - http://github.com/nodejitsu/node-prompt",
-    "gh": "Link to GitHub repositories, issues and commits: `!gh [user]`, `!gh [user]/[project]`, `!gh [user]/[project]@[sha]`, `!gh [user]/[project]#[issue]` are supported",
+    "blog": "http://www.embersofcaerus.com/blog.php",
+    "forum": "http://www.embersofcaerus.com/forum/forum.php",
+    "site": "http://www.forsakenstudios.com/",
     "like": "Type !like [drink] to select drink you get when you receive karma"
   },
-  "irc-server": "irc.freenode.net",
+  "irc-server": "irc.stratics.com",
   "port": 6667,
-  "nick": "kohai-default",
-  "channels": ["#nodebombrange", "#kohai"],
+  "nick": "forsakenbot",
+  "password": "3176df2k11&3@%",
+  "channels": [
+    "#forsakenstudios"
+  ],
   "showErrors": "true",
-  "userName": "kohai",
-  "realName": "the lovable IRC bot",
-  "idCheck": true,
+  "userName": "ForsakenBot",
+  "realName": "www.forsakenstudios.com",
+  "idCheck": false,
   "channelDefaults": {
     "commandString": "!",
     "messageCount": 0,
@@ -71,26 +59,55 @@
     "rate": 0,
     "autoVolume": true,
     "active": true,
-    "wantsTweets": true
+    "wantsTweets": "true",
+    "wantsRSS": "true"
   },
   "auth": {
     "twitter": {
-      "consumer_key": "Public key for Streaming API access",
-      "consumer_secret": "Secret key for Streaming API access",
-      "access_token_key": "Public key for REST API access",
-      "access_token_secret": "Secret key for REST API access"
+      "consumer_key": "A0Rg9zs3fCB7MLbwqFIDYA",
+      "consumer_secret": "oiifN7jQl5NjAC1qMxxUdfgzMX8u8tIuhdwEtnUBh8",
+      "access_token_key": "121676942-TOuet5UnHFTIb9qtsEcbeuEnW6gicfRyvazjGdBy",
+      "access_token_secret": "CuTGNdVTUnN0hHaDJMOK83wzSMNN1oE97t9XNyjq8I"
     },
     "bitly": {
-      "user": "nodejitsu",
-      "key": "R_067ef6cdcfc2b223ea26a986395b420c"
+      "user": "ilovedf",
+      "key": "R_1013e8c9107d6c33ee18096f06b77575"
     }
   },
   "track": [
-    "Node.js",
-    "Nodejitsu",
-    "#nodejs",
-    "NodeKohai"
+    "forsaken studios",
+    "embers of caerus",
+    "@forsakenstudios"
   ],
   "follow": [],
-  "recentTweets": []
+  "recentTweets": [
+    null,
+    null
+  ],
+  "feeds": [
+    {
+      "name": "emberblog",
+      "url": "http://www.embersofcaerus.com/external.php",
+      "interval": 1,
+      "emitOnStart": false
+    }
+  ],
+  "karma": {
+    "values": {
+      "willwh": 9128,
+      "laugh": 1,
+      "Slash_Redhand": 0,
+      "DaveB": 10000,
+      "Yeti": 1,
+      "forsakenbot": 0,
+      "Kirst": 1,
+      "Kristy": 0,
+      "Wulvgar": 1
+    },
+    "preferences": {
+      "willwh": "elephant",
+      "Slash_Redhand": "apples",
+      "[WSX]Thradok": "water"
+    }
+  }
 }

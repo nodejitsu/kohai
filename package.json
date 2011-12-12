@@ -16,7 +16,8 @@
      "colors": "0.5.x",
      "hook.io-irc": "0.4.x",
      "hook.io-twitter": "0.2.x",
-     "hook.io-mailer": "0.3.x"
+     "hook.io-mailer": "0.3.x",
+     "hook.io-feedsub": "0.1.x"
   },
   "engines": {
     "node": ">= 0.4.x < 0.7.x"
