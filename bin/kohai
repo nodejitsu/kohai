@@ -1,11 +1,16 @@
 #!/usr/bin/env node
 
-var Kohai = require('../lib/kohai').Kohai;
+var flatiron = require('flatiron'),
+    app = flatiron.app,
+    hook = require('hookio-broadway'),
+    kohai = require('../lib/kohai');
 
-var kohai = new Kohai({
+app.use(hook, {
   name: 'MrKohai',
   debug: true
 });
 
-kohai.start();
+app.use(kohai);
 
+// TODO: Add .start to hookio-broadway
+app.init();
