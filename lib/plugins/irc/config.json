@@ -1,0 +1,82 @@
+{
+  "version": "v0.1.3",
+  "access": {
+    "admin": [
+      "AvianFlu",
+      "Marak",
+      "indexzero",
+      "hij1nx"
+    ],
+    "employee": [
+      "SubStack",
+      "bradleymeck",
+      "jameson",
+      "jesusabdullah",
+      "slickplaid"
+    ],
+    "friend": [
+      "isaacs",
+      "indutny",
+      "ryah",
+      "TheJH"
+    ]
+  },
+  "ranks": [
+    "admin",
+    "employee",
+    "friend"
+  ],
+  "help": {
+    "password": "To reset your password, type `jitsu users forgot [username]`. To change it, type `jitsu users changepassword`.",
+    "handbook": "The complete Nodejitsu handbook can be read at http://github.com/nodejitsu/handbook",
+    "support": "If no one is here to help you, type `!support [msg]` to send an email to support@nodejitsu.com.",
+    "blog": "Our blog can be viewed at http://blog.nodejitsu.com - a number of tutorials can be found there.",
+    "forever": "Run and monitor your node.js processes forever - http://github.com/indexzero/forever",
+    "http-proxy": "A robust, full-featured HTTP proxy for Node.js with full websocket support - http://github.com/nodejitsu/node-http-proxy",
+    "jitsu": "A CLI tool for deploying your apps to the Nodejitsu hosting platform - http://github.com/nodejitsu/jitsu",
+    "hook.io": "A distributed cross-platform namespaced event system using dnode and EventEmitter2 - http://github.com/hookio/hook.io",
+    "node-prompt": "An easy-to-use library for getting input from users while your program is running - http://github.com/nodejitsu/node-prompt",
+    "gh": "Link to GitHub repositories, issues and commits: `!gh [user]`, `!gh [user]/[project]`, `!gh [user]/[project]@[sha]`, `!gh [user]/[project]#[issue]` are supported",
+    "like": "Type !like [drink] to select drink you get when you receive karma"
+  },
+  "irc-server": "irc.freenode.net",
+  "port": 6667,
+  "nick": "kohai-default",
+  "channels": ["#nodebombrange", "#kohai", "#hook.io"],
+  "showErrors": "true",
+  "userName": "kohai",
+  "realName": "the lovable IRC bot",
+  "idCheck": true,
+  "channelDefaults": {
+    "commandString": "!",
+    "messageCount": 0,
+    "currentTweetCount": 0,
+    "twitPeriod": 480,
+    "volume": 10,
+    "lastVolume": 10,
+    "rate": 0,
+    "autoVolume": true,
+    "active": true,
+    "wantsTweets": true
+  },
+  "auth": {
+    "twitter": {
+      "consumer_key": "Public key for Streaming API access",
+      "consumer_secret": "Secret key for Streaming API access",
+      "access_token_key": "Public key for REST API access",
+      "access_token_secret": "Secret key for REST API access"
+    },
+    "bitly": {
+      "user": "nodejitsu",
+      "key": "R_067ef6cdcfc2b223ea26a986395b420c"
+    }
+  },
+  "track": [
+    "Node.js",
+    "Nodejitsu",
+    "#nodejs",
+    "NodeKohai"
+  ],
+  "follow": [],
+  "recentTweets": []
+}
