@@ -15,7 +15,6 @@
     "test": "vows --spec --isolate"
   },
   "dependencies": {
-     "hook.io": "0.8.x",
      "colors": "0.5.x",
      "broadway": "0.1.x",
      "hook.io-irc": "0.4.x",
