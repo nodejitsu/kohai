@@ -1,4 +1,18 @@
 #!/usr/bin/env node
 
-var kohai = require('../lib/kohai');
-kohai.init(); // KOHAI, INITIALIZE.
+var kohai = require('../lib/kohai'),
+    path = require('path'),
+    utile = require('utile'),
+    port = kohai.config.get('http-port') || 9000;
+
+kohai.start(port, function (err) {
+
+  if (err) {
+    kohai.log.error('there was an error.');
+    kohai.log.error('err.stack');
+  }
+
+  var address = kohai.server.address();
+
+  kohai.log.info(utile.format('http server chilling on %s:%d', address.address, address.port));
+});
