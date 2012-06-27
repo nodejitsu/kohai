@@ -5,14 +5,11 @@ var kohai = require('../lib/kohai'),
     utile = require('utile'),
     port = kohai.config.get('http-port') || 9000;
 
-kohai.start(port, function (err) {
+kohai.start(function (err) {
 
   if (err) {
     kohai.log.error('there was an error.');
-    kohai.log.error('err.stack');
+    console.log(err);
   }
 
-  var address = kohai.server.address();
-
-  kohai.log.info(utile.format('http server chilling on %s:%d', address.address, address.port));
 });
